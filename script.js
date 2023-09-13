@@ -6,6 +6,7 @@ let guesses = 0;
 console.log(target);
 
 while (true) {
+  guesses++;
   const guess = Number(prompt("Guess the number (0-100): "));
 
   if (guess > target) {
@@ -17,3 +18,5 @@ while (true) {
     break;
   }
 }
+
+console.log("You guesses the number in", guesses, "tries");
